@@ -1,0 +1,98 @@
+body {
+  background-image: url("http://static.vecteezy.com/system/resources/previews/000/101/295/original/brownie-vectors.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 32px;
+  margin: 10px 0 10px 0;
+}
+@media screen and (max-width: 800px) {
+  img {
+    margin: 5px 0 5px 0;
+  }
+}
+
+.username {
+  display: inline;
+  margin: 0 0 0 10px;
+}
+
+.positionClass {
+  text-align: right;
+}
+
+.pointsClass {
+  text-align: center;
+}
+
+#mobileNav {
+  visibility: hidden;
+}
+@media screen and (max-width: 800px) {
+  #mobileNav {
+    visibility: visible;
+    background: purple;
+    color: white;
+    padding-top: 15px;
+    box-shadow: 0 1px 2px #777;
+  }
+}
+
+#mainTable {
+  box-shadow: 0 1px 5px purple;
+  border-radius: 5px 5px 0 0;
+  background: purple;
+  opacity: .9;
+  margin: 50px auto 50px auto;
+  transition: all 2s ease;
+}
+@media screen and (min-width: 1080px) {
+  #mainTable {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #mainTable {
+    width: 100%;
+  }
+}
+#mainTable tbody tr:nth-child(even) {
+  background-color: white;
+}
+#mainTable tbody tr:nth-child(odd) {
+  background-color: #ededed;
+}
+#mainTable th {
+  background: purple;
+  color: white;
+  padding: 5px;
+}
+#mainTable th#leftCorner {
+  border-radius: 5px 0 0 0;
+}
+#mainTable th#rightCorner {
+  border-radius: 0 5px 0 0;
+}
+
+tr#headers {
+  background: none;
+}
+@media screen and (max-width: 800px) {
+  tr#headers {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+  }
+}
